@@ -3,7 +3,7 @@
     android:id="@+id/list_main_items"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="50dp">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,25 +13,50 @@
         <ImageView
             android:id="@+id/preview_stream"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
 
         <TextView
             android:id="@+id/number_viewers"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Test # 48"/>
 
         <!-- Buttons share, play, chat -->
+        <!-- Averiguar como hacer imagen clickable ? o imagen especial para botones ? -->
+        <ImageView
+            android:id="@+id/list_button_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="shareStream"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/list_button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openStream"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/list_button_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openChat"
+            android:src="@mipmap/ic_launcher"/>
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/title_stream"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Test Playing ..."/>
 
     <TextView
         android:id="@+id/game_stream"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Playing with barbie"/>
 
 </LinearLayout>
